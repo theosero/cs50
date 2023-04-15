@@ -9,12 +9,20 @@ int main (void)
     //Int to search in array above
     int n;
     int conunt = 0;
+
+    //Print Existing array to std
+    printf("The existing array is: ");
+    for (int i = 0; i < len; i++)
+    {
+        printf("%d, ", arr[i]);
+    }
+    printf("\n");
+    
     printf("Enter number to search for: ");     //integer to search in array
     scanf("%d", &n);
 
     //coumter variable to keep track of search
     int counter = 0;
-
 
     //Loop to perform linear search on the array
     for (int i = 0; i < len; i++)
