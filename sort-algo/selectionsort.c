@@ -5,10 +5,17 @@ int main(void)
     int arr[] = {6, 3, 4, 2, 7, 1};
     int len = 6;
 
+    //print unsorted array of integers
+        //Print Existing array to std
+    printf("The existing array is: ");
+    for (int i = 0; i < len; i++)
+    {
+        printf("%d ", arr[i]);
+    }
+    printf("\n\n");
+
+
     //Find the least int in the usorted array, and swap with current position
-
-
-    //Swap the current position with min
     for (int i = 0; i < len - 1; i++)
     {
         int min = arr[i];
@@ -29,7 +36,7 @@ int main(void)
     }
     
     //Print sorted arrray
-    printf("Sorted Array: ");
+    printf("The sorted srray is: ");
     for (int i = 0; i < len; i++)
     {
         printf("%d ", arr[i]);
